@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-page="contact">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Rasmiah Shadfan</title>
+  <meta name="description" content="Contact Rasmiah Shadfan for collaboration or opportunities." />
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand__logo"></span><span class="brand__name">Rasmiah Shadfan</span></a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+        <ul id="navLinks" class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About Me</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+          <li><a class="nav__link active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main id="contact">
+  <section class="section contact">
+    <div class="container contact-grid">
+      <!-- Left column: intro + quick contacts -->
+      <div class="card contact-info">
+  <h1 class="title">Let’s Build Something Together</h1>
+  <p class="muted">
+    I’m most responsive via email — feel free to share your project ideas, goals, or collaborations.
+    I usually reply within 1–2 days.
+  </p>
+
+  <ul class="contact-details">
+    <li>
+      <span class="cd-emoji">📧</span>
+      <div>
+        <div class="cd-label">Email</div>
+        <a href="mailto:rasmiashadfan@gmail.com">rasmiashadfan@gmail.com</a>
+      </div>
+    </li>
+
+    <li>
+      <span class="cd-emoji">💼</span>
+      <div>
+        <div class="cd-label">LinkedIn</div>
+        <a href="https://www.linkedin.com/in/rasmiah-shadfan-156990329/"
+           target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/rasmiah-shadfan
+        </a>
+      </div>
+    </li>
+
+    <li>
+      <span class="cd-emoji">🐙</span>
+      <div>
+        <div class="cd-label">GitHub</div>
+        <a href="https://github.com/rasmiah"
+           target="_blank" rel="noopener noreferrer">
+          github.com/rasmiah
+        </a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="contact-hint">
+    Prefer to connect elsewhere? Feel free to reach out on any of the platforms above — I’d love to hear from you.
+  </div>
+</div>
+
+
+      <!-- Right column: refined form -->
+      <div class="card contact-form-card">
+      <form id="contactForm"
+      class="contact-form"
+      action="https://formspree.io/f/xrbyaypr"
+      method="POST"
+      novalidate>
+
+  <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+         style="position:absolute;left:-9999px;height:0;width:0;opacity:0">
+
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" placeholder="Your name" required maxlength="80" autocomplete="name">
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" inputmode="email">
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6"
+            placeholder="Tell me about your project or say hi!"
+            required minlength="10" maxlength="2000"></textarea>
+
+  <button class="btn btn--primary" type="submit" id="submitBtn">Send</button>
+  <p class="note" id="formNote">I usually reply within 1–2 days.</p>
+  <div id="formStatus" class="form-status" aria-live="polite"></div>
+</form>
+
+
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Rasmiah Shadfan</p>
+      <ul class="social">
+        <li><a href="mailto:rasmiah@example.com">Email</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

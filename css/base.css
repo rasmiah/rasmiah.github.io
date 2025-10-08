@@ -1,0 +1,49 @@
+/* Reset & base */
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+ul{margin:0;padding:0;list-style:none}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container{width:min(95%,var(--maxw));margin-inline:auto}
+
+.display{font-size:clamp(34px,8vw,64px);line-height:1.05;font-weight:800;margin:10px 0}
+.title{font-size:clamp(24px,5vw,36px);margin:0 0 10px}
+.lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:60ch}
+.eyebrow{font-weight:700;letter-spacing:.02em;color:var(--muted);margin:0 0 12px}
+.muted{color:var(--muted)}
+.note{color:var(--muted);font-size:.92rem}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+
+.section{padding:clamp(60px,8vw,110px) 0}
+
+/* Cards & pills */
+.card{
+  background:var(--card);
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+.pillset{display:flex;flex-wrap:wrap;gap:10px}
+.pill{
+  padding:8px 12px;border-radius:999px;border:1px solid rgba(0,0,0,.08);
+  background:#fff;font-weight:600;font-size:.9rem
+}
+.pill--blue{border-color:color-mix(in oklab, var(--blue), black 20%); color:var(--blue)}
+.pill--red{border-color:color-mix(in oklab, var(--red), black 20%); color:var(--red)}
+.pill--yellow{border-color:color-mix(in oklab, var(--yellow), black 25%); color:#8a7400}
+.pill--green{border-color:color-mix(in oklab, var(--green), black 20%); color:var(--green)}
+
+.grid-2{display:grid;grid-template-columns: 1fr 1fr;gap:var(--gap)}
+.grid-3{display:grid;grid-template-columns: repeat(3,1fr);gap:var(--gap)}
+@media (max-width: 900px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+}

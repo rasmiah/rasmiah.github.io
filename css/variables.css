@@ -1,0 +1,19 @@
+:root{
+  /* Four primaries */
+  --blue:#2563EB;   /* Tech */
+  --red:#EF4444;    /* Creative */
+  --yellow:#FACC15; /* Energy/Highlight */
+  --green:#10B981;  /* Personal/Growth */
+
+  /* White theme (as requested) */
+  --bg:#ffffff;
+  --text:#1B1E27;
+  --muted:#4B4F5F;
+  --card: #f4f6fb; /* soft card color */
+
+  /* Layout tokens */
+  --maxw:1100px;
+  --radius:16px;
+  --gap:20px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}

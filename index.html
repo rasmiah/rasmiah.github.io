@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-page="home">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rasmiah Shadfan — Home</title>
+  <meta name="description" content="Flutter-first developer • Creative technologist • Cybersecurity enthusiast" />
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span class="brand__name">Rasmiah Shadfan</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+        <ul id="navLinks" class="nav__links">
+          <li><a class="nav__link active" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About Me</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="section hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow"> Flutter developer • Web developer • UI/UX designer </p>
+          <h1 class="display">I’m Rasmiah a developer that makes her ideas move</h1>
+          <p class="lead">
+            I’m a developer who blends creativity, empathy, and logic to build digital experiences that feel personal.
+             I love turning ideas into tools that make life a little easier — and more human.
+          </p>
+          <div class="cta">
+            <a class="btn btn--primary" href="projects.html">See projects</a>
+            <a class="btn btn--ghost btn--crea" href="assets/rasmiah shadfan cv.pdf" download>Download CV</a>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="blob blob--blue"></div>
+          <div class="blob blob--red"></div>
+          <div class="blob blob--yellow"></div>
+          <div class="blob blob--green"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">What I’m into</h2>
+        <p class="muted">Mobile (Flutter), Web (front/back), design (UI/UX) and practical cybersecurity.</p>
+        <div class="pillset">
+          <span class="pill">Flutter</span>
+          <span class="pill">Dart</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Node/Express</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">UI/UX</span>
+          <span class="pill">Cybersecurity</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Rasmiah Shadfan</p>
+      <ul class="social">
+        <li><a href="mailto:rasmiashadfan@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/rasmiah-shadfan-156990329/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rasmiah" target="_blank" rel="noopener">GitHub</a></li>
+
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
