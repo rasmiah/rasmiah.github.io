@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-page="case-study">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organic Shop App — Case Study | Rasmiah Shadfan</title>
+  <meta name="description" content="UI/UX case study for Organic Shop, a fresh grocery shopping experience designed by Rasmiah Shadfan." />
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand__logo"></span>
+        <span class="brand__name">Rasmiah Shadfan</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+        <ul id="navLinks" class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About Me</a></li>
+          <li><a class="nav__link active" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="case-study">
+    <section class="section section--furni"><!-- reuse white bg + spacing -->
+      <div class="container">
+
+        <!-- Back link -->
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+
+        <!-- HERO: Title + summary + meta + slider -->
+        <header class="case-hero case-hero--organic">
+          <div class="case-hero__text">
+            <h1 class="title">Organic Shop — Grocery App</h1>
+            <p class="case-tagline">
+              A fresh, green grocery shopping experience with clear categories, soft gradients,
+              and friendly visuals from onboarding to delivery tracking.
+            </p>
+
+            <div class="case-meta">
+              <p><strong>Role:</strong> UI/UX Designer</p>
+              <p><strong>Tools:</strong> Figma</p>
+              <p><strong>Platform:</strong> Mobile (iOS / Android)</p>
+            </div>
+
+            <!-- Figma link under meta -->
+            <div class="case-hero__figma">
+              <h3 class="case-hero__figma-title">Explore in Figma</h3>
+              <ul class="case-links case-links--hero">
+                <li>
+                  <strong>Design file:</strong>
+                  <a href="https://www.figma.com/design/n469m8TtRu7qsxIpqfUYzi/Organic-shop?node-id=25-214&t=fnUuFeH8WEzUpaA0-1"
+                    target="_blank" rel="noopener">
+                    View Figma design file
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HERO SLIDER with main mockups -->
+          <div class="slider">
+            <div class="slider-track">
+              <figure class="slide">
+                <img src="assets/images/LoginMain.png" alt="Organic Shop login and welcome screens">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/MapMain.png" alt="Organic Shop map and delivery tracking screens">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/ProductMain.png" alt="Organic Shop product details and similar items">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/shopMain.png" alt="Organic Shop shop and category overview">
+              </figure>
+            </div>
+            <div class="slider-dots"></div>
+          </div>
+        </header>
+
+        <!-- Overview: Problem / Goal / Target user -->
+        <section class="case-section case-section--cards">
+          <div class="case-card-block">
+            <h2>Problem</h2>
+            <p>
+              Many grocery apps feel crowded and stressful, with long lists, unclear hierarchy,
+              and too many actions on each screen. It’s hard to quickly find everyday items.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h2>Goal</h2>
+            <p>
+              Design a calm, structured organic grocery app where users can move smoothly from
+              splash and onboarding to browsing, product details, and delivery tracking.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h2>Target User</h2>
+            <p>
+              Busy people who order fresh groceries from their phone and prefer a clean interface,
+              soft visuals, and clear structure instead of a noisy shopping experience.
+            </p>
+          </div>
+        </section>
+
+        <!-- Authentication section -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Authentication</h2>
+            <h3>Login & Register</h3>
+            <p>
+              I explored three login and three register layouts, then chose a centered version
+              with simple fields, one primary action, and soft green accents. The focus is on
+              fast, familiar sign-in inside a softer visual system.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/LoginFrame.png"
+                 alt="Final login and register screens for Organic Shop"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Onboarding -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Onboarding Flow</h2>
+            <p>
+              A three-screen onboarding continues one story across all pages: what the app does,
+              why it focuses on organic products, and how fast delivery works. Linear gradients,
+              imagery, and short copy set a friendly tone before the main shop.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/OnboardingFrame.png"
+                 alt="Onboarding screens for Organic Shop"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Browsing & Categories -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Browsing & Categories</h2>
+            <p>
+              The app has a main shop view and a focused category screen. Categories can be shown
+              as tall vertical cards or as a compact two-column grid, but both layouts reuse the
+              same card component, spacing, and shadows for consistency.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/CatatgoriesFrame.png"
+                 alt="Organic Shop categories views in list and grid style"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Product & Cart -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Product Details & Cart</h2>
+            <p>
+              Product screens focus on the image, price, and quantity controls, with similar
+              products underneath to keep the user exploring. When an item is added, a bottom
+              notification confirms it and offers two clear choices: continue shopping or go to
+              checkout.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/ProductFrame.png"
+                 alt="Product details and add-to-cart feedback for Organic Shop"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Map & Delivery tracking -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Delivery Tracking</h2>
+            <p>
+              The delivery view shows the route on a map and a bottom sheet with address, driver,
+              and ETA. I designed a simple map-only state and an expanded sheet state so users
+              can check details without losing context of the path.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/MapFrame.png"
+                 alt="Map and delivery tracking screens for Organic Shop"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Navigation</h2>
+            <p>
+              A side navigation drawer groups the main areas of the app in one place, keeping the
+              shopping screens focused on products. It follows the same corner radius, shadows,
+              and green highlights as the rest of the system.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/NavigationFrame.png"
+                 alt="Navigation drawer for Organic Shop"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Design decisions -->
+         <h2 class="case-section__title">Design Decisions</h2>
+
+        <section class="case-section case-section--cards ">
+          
+
+          <div class="case-card-block">
+            <h3>Visual Style</h3>
+            <p>
+              The palette is built around fresh greens
+              <span class="color-pill" style="background:#2EC948;"></span>
+              <span class="color-pill" style="background:#59CE6D;"></span>
+              <span class="color-pill" style="background:#14DE76;"></span>
+              with white
+              <span class="color-pill" style="background:#FFFFFF;"></span>
+              and a soft grey
+              <span class="color-pill" style="background:#D9D9D9;"></span>
+              as neutrals. I used gradients, imagery, and a separate background practice page to
+              experiment with shadows and color combinations before final screens.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h3>Components</h3>
+            <p>
+              A dedicated components page includes primary and secondary buttons, checkboxes,
+              toggles, inputs, a slider, and a two-button toggle where the active option becomes
+              primary. These pieces are reused across login, categories, product cards, navigation,
+              and bottom sheets.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h3>Shadows & Micro-interactions</h3>
+            <p>
+              Shadows were a core focus: they lift cards, bottom sheets, and notifications without
+              heavy borders. Combined with subtle state changes on buttons and toggles, they make
+              the interface feel layered and responsive while staying calm and minimal.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as other pages) -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Rasmiah Shadfan</p>
+      <ul class="social">
+        <li><a href="mailto:rasmiah@example.com">Email</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

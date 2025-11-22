@@ -22,7 +22,8 @@ body{
 .note{color:var(--muted);font-size:.92rem}
 .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
 
-.section{padding:clamp(60px,8vw,110px) 0}
+/* ↓↓↓ smaller, but still nice spacing ↓↓↓ */
+.section{padding:clamp(40px,6vw,80px) 0}
 
 /* Cards & pills */
 .card{

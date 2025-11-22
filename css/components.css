@@ -1,34 +1,77 @@
 /* Buttons, tags, project cards */
 .btn{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:10px 14px;border-radius:12px;border:1px solid rgba(0,0,0,.12);
-  background:#fff;transition:transform .08s ease, box-shadow .2s ease;
-  color:var(--text)
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.12);
+  background:#fff;
+  transition:transform .08s ease, box-shadow .2s ease;
+  color:var(--text);
 }
-.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
-.btn--primary{color:#fff;background:linear-gradient(135deg,var(--blue),var(--red));border:0}
+.btn:hover{
+  transform:translateY(-1px);
+  box-shadow:var(--shadow);
+}
+.btn--primary{
+  color:#fff;
+  background:linear-gradient(135deg,var(--blue),var(--red));
+  border:0;
+}
 .btn--ghost{background:transparent}
 
 .chip{border-radius:999px;background:#fff}
 .chip.is-active{outline:2px solid var(--blue)}
 
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
-.tag{
-  display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;
-  background:#fff;border:1px solid rgba(0,0,0,.08);font-size:.85rem;color:var(--muted)
+.tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:10px 0 0;
 }
-.tag--blue{color:var(--blue);border-color:color-mix(in oklab, var(--blue), black 20%)}
-.tag--green{color:var(--green);border-color:color-mix(in oklab, var(--green), black 20%)}
-.tag--yellow{color:#8a7400;border-color:color-mix(in oklab, var(--yellow), black 25%)}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  font-size:.85rem;
+  color:var(--muted);
+}
+.tag--blue{
+  color:var(--blue);
+  border-color:color-mix(in oklab, var(--blue), black 20%);
+}
+.tag--green{
+  color:var(--green);
+  border-color:color-mix(in oklab, var(--green), black 20%);
+}
+.tag--yellow{
+  color:#8a7400;
+  border-color:color-mix(in oklab, var(--yellow), black 25%);
+}
 
-.card.project{padding:16px;position:relative;overflow:hidden}
-.card__bar{height:4px;background:#e7e9f3;border-radius:4px;margin:-16px -16px 12px}
+.card.project{
+  padding:16px;
+  position:relative;
+  overflow:hidden;
+}
+.card__bar{
+  height:4px;
+  background:#e7e9f3;
+  border-radius:4px;
+  margin:-16px -16px 12px;
+}
 .card__bar--blue{background:color-mix(in oklab, var(--blue), white 35%)}
 .card__bar--red{background:color-mix(in oklab, var(--red), white 35%)}
 .card__bar--green{background:color-mix(in oklab, var(--green), white 35%)}
+.card__bar--yellow{background:color-mix(in oklab, var(--yellow), white 35%)}
 
 .facts{display:grid;gap:8px;margin:10px 0 0}
 
+/* About page lists */
 .creative-habits{
   list-style:none;
   padding:0;
@@ -46,213 +89,494 @@
   box-shadow:var(--shadow);
 }
 
-.personal-points {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.personal-points{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.personal-points li{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.08);
+  color:var(--muted);
+  font-weight:500;
+  line-height:1.5;
+  box-shadow:var(--shadow);
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+  font-size:0.9rem;
+  padding:8px 12px;
+  border-radius:10px;
+}
+.personal-points li:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+.personal-points li::first-letter{
+  font-size:1.1em;
+}
+@media (max-width: 768px){
+  .personal-points li{padding:10px 14px;}
 }
 
-.personal-points li {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  color: var(--muted);
-  font-weight: 500;
-  line-height: 1.5;
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  font-size: 0.9rem;
-  padding: 8px 12px;
-  border-radius: 10px;
+/* Certificates grid */
+.cert-grid{
+  margin-top:24px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+.cert-card{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.06);
+  border-radius:14px;
+  padding:16px 20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cert-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.06);
+}
+.cert-card h3{
+  margin-bottom:6px;
+  font-size:1.1rem;
+}
+.cert-card p{
+  margin-bottom:10px;
+  color:var(--muted);
+  line-height:1.5;
+}
+.cert-link{
+  display:inline-block;
+  font-weight:500;
+  color:var(--blue);
+  text-decoration:none;
+  border-bottom:2px solid transparent;
+  transition:color 0.2s ease, border-color 0.2s ease;
+}
+.cert-link:hover{
+  color:var(--red);
+  border-color:var(--red);
+}
+@media (max-width: 768px){
+  .cert-grid{grid-template-columns:1fr;}
 }
 
-/* Subtle hover lift effect */
-.personal-points li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* Optional: make emojis slightly bigger and aligned */
-.personal-points li::first-letter {
-  font-size: 1.1em;
-}
-
-/* Responsive spacing */
-@media (max-width: 768px) {
-  .personal-points li {
-    padding: 10px 14px;
-  }
-}
-
-.cert-grid {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-/* Match the card layout but softer styling */
-.cert-card {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 14px;
-  padding: 16px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.cert-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-}
-
-.cert-card h3 {
-  margin-bottom: 6px;
-  font-size: 1.1rem;
-}
-
-.cert-card p {
-  margin-bottom: 10px;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-/* Certificate download link */
-.cert-link {
-  display: inline-block;
-  font-weight: 500;
-  color: var(--blue);
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.cert-link:hover {
-  color: var(--red);
-  border-color: var(--red);
-}
-
-/* Responsive grid for small screens */
-@media (max-width: 768px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Grid */
+/* Contact page */
 .contact-grid{
   display:grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns:1.1fr 1fr;
+  gap:24px;
+  align-items:start;
 }
 @media (max-width: 900px){
-  .contact-grid{ grid-template-columns: 1fr; }
+  .contact-grid{grid-template-columns:1fr;}
 }
-
-/* Left column details */
-.contact-info {
-  padding: 24px;
-  background: #fff;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+.contact-info{
+  padding:24px;
+  background:#fff;
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
 }
-
-.contact-info .title {
-  margin-bottom: 8px;
-  font-size: 1.75rem;
+.contact-info .title{
+  margin-bottom:8px;
+  font-size:1.75rem;
 }
-
-.contact-info .muted {
-  margin-bottom: 16px;
-  line-height: 1.6;
+.contact-info .muted{
+  margin-bottom:16px;
+  line-height:1.6;
 }
-
-.contact-details {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 14px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.contact-details{
+  list-style:none;
+  padding:0;
+  margin:0 0 14px 0;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
-
-.contact-details li {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  background: #fafafa;
-  border: 1px solid rgba(0,0,0,0.05);
-  border-radius: 10px;
-  padding: 10px 12px;
-  transition: background 0.2s, transform 0.2s;
+.contact-details li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  background:#fafafa;
+  border:1px solid rgba(0,0,0,0.05);
+  border-radius:10px;
+  padding:10px 12px;
+  transition:background 0.2s, transform 0.2s;
 }
-
-.contact-details li:hover {
-  background: #f8f9ff;
-  transform: translateY(-2px);
+.contact-details li:hover{
+  background:#f8f9ff;
+  transform:translateY(-2px);
 }
-
-.cd-emoji {
-  font-size: 1.2rem;
-  line-height: 1.2;
+.cd-emoji{
+  font-size:1.2rem;
+  line-height:1.2;
 }
-
-.cd-label {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--text);
+.cd-label{
+  font-weight:600;
+  font-size:0.95rem;
+  color:var(--text);
 }
-
-.contact-details a {
-  color: var(--blue);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s, border-color 0.2s;
+.contact-details a{
+  color:var(--blue);
+  text-decoration:none;
+  font-size:0.95rem;
+  transition:color 0.2s, border-color 0.2s;
 }
-
-.contact-details a:hover {
-  color: var(--red);
+.contact-details a:hover{
+  color:var(--red);
 }
-
-.contact-hint {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 0.95rem;
+.contact-hint{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:0.95rem;
 }
-
-
-.contact-form label {
-  display: block;
-  font-weight: 600;
-  margin-top: 10px;
-  color: var(--text);
+.contact-form label{
+  display:block;
+  font-weight:600;
+  margin-top:10px;
+  color:var(--text);
 }
-
 .contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-  font: inherit;
-  background: #fff;
+.contact-form textarea{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid rgba(0,0,0,0.12);
+  border-radius:10px;
+  font:inherit;
+  background:#fff;
 }
-
 .contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid color-mix(in oklab, var(--blue), white 20%);
-  border-color: transparent;
+.contact-form textarea:focus{
+  outline:2px solid color-mix(in oklab, var(--blue), white 20%);
+  border-color:transparent;
+}
+.contact-form .btn{margin-top:14px;}
+.form-status{
+  margin-top:6px;
+  min-height:1.2em;
 }
 
-.contact-form .btn {
-  margin-top: 14px;
+/* Generic case study layout */
+.case-hero{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  align-items:flex-start;
+  margin-top:1.5rem;
+  margin-bottom:2.5rem;
+}
+.case-hero__text{flex:1 1 260px;}
+.case-hero__gallery{
+  flex:1.2 1 320px;
+  margin-top:1.75rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:20px;
+}
+.case-hero__image{flex:1 1 260px;}
+.case-hero__image img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+}
+.case-meta{
+  margin-top:1rem;
+  font-size:0.95rem;
+}
+.case-meta p{
+  margin:0.15rem 0;
 }
 
-.form-status {
-  margin-top: 6px;
-  min-height: 1.2em;
+/* Base case section */
+.case-section{margin-top:2.5rem;}
+/* Shared layout for Problem/Goal/Concept + Design Decisions cards */
+.case-section--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+/* Make the section title span full row */
+.case-section__title {
+  grid-column: 1 / -1;
+  margin-bottom: 0.75rem;
+}
+
+/* Make each card fill its grid cell nicely */
+.case-card-block {
+  height: 100%;
+}
+
+.case-section__title{
+  grid-column:1 / -1;
+  margin-bottom:0.5rem;
+}
+
+/* Furni palette */
+:root{
+  --furni-deep:#3B5D50;
+  --furni-accent:#F9BF29;
+  --furni-green-soft:#58756A;
+  --furni-grey-soft:#DCE5E4;
+  --furni-dark:#2F2F2F;
+}
+
+/* Section background */
+.section--furni{background:#FFFFFF;}
+
+/* Hero variations */
+.case-hero--furni{
+  margin-top:1.5rem;
+  margin-bottom:2.5rem;
+}
+.case-tagline{
+  margin-top:0.75rem;
+  color:var(--furni-dark);
+  font-weight:500;
+}
+
+/* Meta override */
+.case-meta{
+  margin-top:1rem;
+  font-size:0.95rem;
+  color:#7F7D7C;
+}
+.case-meta p{
+  margin:0.15rem 0;
+  font-weight:500;
+}
+
+/* Top gallery mockup card */
+.case-hero__mockup{
+  background:#F7FAF9;
+  border-radius:16px;
+  padding:0.75rem;
+  border:1px solid #DCE5E4;
+  box-shadow:0 12px 30px rgba(0,0,0,0.04);
+}
+.case-hero__mockup img{
+  width:100%;
+  display:block;
+  border-radius:16px;
+  box-shadow:0 8px 28px rgba(0,0,0,0.12);
+}
+.case-hero__mockup figcaption{
+  margin-top:0.4rem;
+  font-size:0.85rem;
+  color:#7F7D7C;
+}
+
+/* Headings */
+.case-section h2{
+  font-weight:700;
+  color:var(--furni-deep);
+}
+.case-section h3{
+  font-weight:600;
+  margin-top:0;
+  margin-bottom:0.4rem;
+  color:var(--furni-dark);
+}
+
+/* Card blocks for Problem/Goal/User, Design Process, Design Decisions */
+.case-card-block{
+  background:#fff;
+  border-radius:14px;
+  padding:18px 22px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.08);
+  border:1px solid #DCE5E4;
+}
+.case-card-block p{
+  margin:0;
+  line-height:1.7;
+  font-weight:400;
+}
+
+/* Paragraph next to videos: also card style */
+.case-section--split .case-section__text p{
+  background:#fff;
+  border-radius:14px;
+  padding:18px 22px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.08);
+  border:1px solid #DCE5E4;
+  line-height:1.7;
+  margin:0;
+}
+
+/* Key interactions muted text */
+.case-section p.muted{
+  color:#7F7D7C;
+  margin-top:0.75rem;
+}
+
+/* Split layout (text + media) */
+.case-section--split{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  align-items:flex-start;
+  margin-top:2.5rem;
+}
+.case-section__text{flex:1 1 260px;}
+.case-section__media{flex:1 1 260px;}
+.case-video{
+  width:100%;
+  max-width:480px;
+  display:block;
+  border-radius:12px;
+  border:1px solid #DCE5E4;
+}
+
+/* Small color pill */
+.color-pill{
+  display:inline-block;
+  width:14px;
+  height:14px;
+  border-radius:999px;
+  margin:0 4px;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+/* Muted text inside case sections */
+.case-section .muted{
+  color:#7F7D7C;
+}
+
+/* Pills for Figma links */
+.case-links{
+  list-style:none;
+  padding-left:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:12px;
+}
+.case-links li{
+  background:#fff;
+  border-radius:999px;
+  padding:8px 14px;
+  border:1px solid #DCE5E4;
+  box-shadow:0 6px 16px rgba(0,0,0,0.04);
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:0.9rem;
+}
+.case-links li strong{
+  font-weight:600;
+  color:var(--furni-deep);
+}
+.case-links li a{
+  text-decoration:none;
+  font-weight:600;
+  color:var(--furni-green-soft);
+  border-bottom:1px solid transparent;
+  transition:color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.case-links li a:hover{
+  color:var(--furni-accent);
+  border-color:var(--furni-accent);
+  transform:translateY(-1px);
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px){
+  .case-hero{flex-direction:column;}
+  .case-hero__gallery{grid-template-columns:1fr;}
+  .case-section--cards{grid-template-columns:1fr;}
+  .case-section--split{flex-direction:column;}
+  .case-section__media{order:2;}
+}
+
+/* HERO SLIDER */
+.slider{
+  position:relative;
+  width:100%;
+  max-width:750px;
+  margin:0 auto;
+  overflow:hidden;
+  padding-bottom:20px;
+}
+.slider-track{
+  display:flex;
+  transition:transform 0.5s ease;
+}
+.slide{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  flex:0 0 100%;
+}
+.slide img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:16px;
+}
+
+/* Dots under slider */
+.slider-dots{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin-top:10px;
+}
+.slider-dots button{
+  width:10px;
+  height:10px;
+  padding:0;
+  border-radius:50%;
+  border:none;
+  background:#DCE5E4;
+  cursor:pointer;
+  flex:0 0 auto;
+  transition:background 0.3s ease, transform 0.2s ease;
+}
+.slider-dots button.active{
+  background:var(--furni-deep);
+  transform:scale(1.15);
+}
+/* Fix buttons inside case study sections */
+
+
+#projects .btn{
+  border-radius:12px;
+  display:inline-flex;
+}
+/* Make all case-study content stretch like the slider */
+/* Center cards in case study sections */
+.case-video {
+  width: 100%;
+  max-width: 700px;      /* or remove this line completely */
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #DCE5E4;
+}
+/* ========================================
+   Case Study – full stretch card layout
+   ======================================== */
+html[data-page="case-study"] .case-section--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  width: 100%;
+}
+
+/* Title spans the whole grid */
+html[data-page="case-study"] .case-section--cards .case-section__title {
+  grid-column: 1 / -1;
+  margin-bottom: 0.75rem;
+  text-align: left;   /* or center if you prefer */
+}
+
+/* Cards stretch fully inside their column */
+html[data-page="case-study"] .case-section--cards .case-card-block {
+  width: 100%;
+  height: 100%;
 }

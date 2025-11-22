@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Rasmiah Shadfan</title>
-  <meta name="description" content="Selected projects by Rasmiah Shadfan: Flutter apps, web work, and security labs." />
+  <meta name="description" content="Selected projects by Rasmiah Shadfan: Flutter apps, web work, and UI/UX case studies." />
   <link rel="icon" href="assets/icons/favicon.svg">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -14,7 +14,10 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand__logo"></span><span class="brand__name">Rasmiah Shadfan</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand__logo"></span>
+        <span class="brand__name">Rasmiah Shadfan</span>
+      </a>
       <nav class="site-nav" aria-label="Primary Navigation">
         <button class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
         <ul id="navLinks" class="nav__links">
@@ -29,156 +32,170 @@
 
   <main id="projects">
     <section class="section projects">
-  <div class="container">
-    <h1 class="title">Projects</h1>
-    <p class="muted">A collection of web and mobile projects I’ve built — from course-based foundations to my own evolving ideas.</p>
-
-    <h2>🌐 Web Projects</h2>
-    <div class="grid-2">
-      <article class="card project">
-        <div class="card__bar card__bar--red"></div>
-        <h3>Khadamatcom</h3>
+      <div class="container">
+        <h1 class="title">Projects</h1>
         <p class="muted">
-          A full-stack service marketplace website built using Node.js, Express, and PostgreSQL.  
-          I developed the admin dashboard, authentication system, and database logic.
+          A collection of web and mobile projects I’ve built — from course-based foundations to my own evolving ideas.
         </p>
-        <ul class="tags">
-          <li class="tag">Node.js</li>
-          <li class="tag">Express</li>
-          <li class="tag">PostgreSQL</li>
-        </ul>
-      </article>
 
-      <article class="card project">
-        <div class="card__bar card__bar--blue"></div>
-        <h3>My Portfolio Website</h3>
-        <p class="muted">
-          Designed and developed entirely from scratch using HTML, CSS, and JavaScript.  
-          Focused on simplicity, storytelling, and a clean 4-color visual theme.
-        </p>
-        <ul class="tags">
-          <li class="tag">HTML</li>
-          <li class="tag">CSS</li>
-          <li class="tag">JavaScript</li>
-          <li class="tag">UI/UX</li>
-        </ul>
-      </article>
-    </div>
+        <!-- 1) UI/UX CASE STUDIES -->
+        <h2>🎨 UI/UX Case Studies</h2>
+        <!-- 👇 CHANGED grid-2 → grid-3 so all 3 cards sit in one row on desktop -->
+        <div class="grid-3">
+          <article class="card project">
+            <h3>Furni – Furniture Website</h3>
+            <p class="muted">
+              A full interaction furniture website with a clickable prototype.  
+              I designed the full flow from landing page to checkout with a focus on clean layout and easy navigation.
+            </p>
+            <a href="furni-case-study.html" class="btn">View Case Study</a>
+          </article>
 
-    <h2>📱 Flutter Apps</h2>
-    <div class="grid-2">
-      <article class="card project">
-        <div class="card__bar card__bar--blue"></div>
-        <h3>Flash Chat</h3>
-        <p class="muted">
-          A real-time chat app using Firebase for authentication and storage.  
-          I customized the interface and improved the chat flow.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">Firebase</li>
-        </ul>
-      </article>
+          <article class="card project">
+            <h3>Organic Shop – Mobile App</h3>
+            <p class="muted">
+              A mobile app concept for an organic products store.  
+              I created multiple screens covering browsing, product details, and cart flow, focused on a calm, natural visual system.
+            </p>
+  
+            <a href="organic-shop-case-study.html" class="btn">View Case Study</a>
+          </article>
 
-      <article class="card project">
-        <div class="card__bar card__bar--green"></div>
-        <h3>Todoey</h3>
-        <p class="muted">
-          A simple and efficient to-do list app with state management and local storage.  
-          I added task categorization and a clean design interface.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">Local Storage</li>
-        </ul>
-      </article>
+          <article class="card project">
+            <h3>Flux — NFT Landing Page</h3>
+            <p class="muted">
+              A single-page NFT landing website focused on clarity and bold visuals.  
+              I structured the page from hero to final CTA to tell a clear story in one scroll.
+            </p>
+            
+            <a href="flux-case-study.html" class="btn">View Case Study</a>
+          </article>
+        </div>
 
-      <article class="card project">
-        <div class="card__bar card__bar--yellow"></div>
-        <h3>Clima</h3>
-        <p class="muted">
-          A weather app fetching live data from an API.  
-          I enhanced its visuals and added location-based results and custom icons.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">API</li>
-        </ul>
-      </article>
+        <!-- 2) FLUTTER APPS -->
+        <h2>📱 Flutter Apps</h2>
+        <div class="grid-2">
+          <article class="card project">
+            <h3>Flash Chat</h3>
+            <p class="muted">
+              A real-time chat app using Firebase for authentication and storage.  
+              I customized the interface and improved the chat flow.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">Firebase</li>
+            </ul>
+          </article>
 
-      <article class="card project">
-        <div class="card__bar card__bar--red"></div>
-        <h3>BMI Calculator</h3>
-        <p class="muted">
-          A Flutter app designed to calculate and visually represent BMI results.  
-          I redesigned the interface for a more modern look and added feedback animations.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">Dart</li>
-        </ul>
-      </article>
-    </div>
+          <article class="card project">
+            <h3>Todoey</h3>
+            <p class="muted">
+              A simple and efficient to-do list app with state management and local storage.  
+              I added task categorization and a clean design interface.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">Local Storage</li>
+            </ul>
+          </article>
 
-    <h2>🚀 What I’m Working On</h2>
-    <div class="grid-2">
-      <article class="card project">
-        <div class="card__bar card__bar--blue"></div>
-        <h3>Recovery Companion</h3>
-        <p class="muted">
-          My first original Flutter app — focused on recovery, journaling, and emotional support.  
-          Designed to blend mental health awareness with supportive daily habits.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">Mental Health</li>
-        </ul>
-      </article>
+          <article class="card project">
+            <h3>Clima</h3>
+            <p class="muted">
+              A weather app fetching live data from an API.  
+              I enhanced its visuals and added location-based results and custom icons.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">API</li>
+            </ul>
+          </article>
 
-      <article class="card project">
-        <div class="card__bar card__bar--yellow"></div>
-        <h3>F1 Pulse</h3>
-        <p class="muted">
-          A Flutter app for Formula 1 fans — showing live race info, driver stats, and news updates.  
-          Built to enhance accessibility and engagement for regional audiences.
-        </p>
-        <ul class="tags">
-          <li class="tag tag--blue">Flutter</li>
-          <li class="tag">API Integration</li>
-        </ul>
-      </article>
+          <article class="card project">
+            <h3>BMI Calculator</h3>
+            <p class="muted">
+              A Flutter app designed to calculate and visually represent BMI results.  
+              I redesigned the interface for a more modern look and added feedback animations.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">Dart</li>
+            </ul>
+          </article>
+        </div>
 
-      <article class="card project">
-        <div class="card__bar card__bar--green"></div>
-        <h3>Discovering Amman</h3>
-        <p class="muted">
-          A website idea to showcase Jordan’s hidden gems, culture, and local experiences.  
-          A creative concept focused on user-centered navigation and storytelling.
-        </p>
-        <ul class="tags">
-          <li class="tag">UI/UX</li>
-          <li class="tag">Web Design</li>
-        </ul>
-      </article>
+        <!-- 3) WEB PROJECTS -->
+        <h2>🌐 Web Projects</h2>
+        <div class="grid-2">
+          <article class="card project">
+            <h3>Khadamatcom</h3>
+            <p class="muted">
+              A full-stack service marketplace website built using Node.js, Express, and PostgreSQL.  
+              I developed the admin dashboard, authentication system, and database logic.
+            </p>
+            <ul class="tags">
+              <li class="tag">Node.js</li>
+              <li class="tag">Express</li>
+              <li class="tag">PostgreSQL</li>
+            </ul>
+          </article>
 
-      <article class="card project">
-        <div class="card__bar card__bar--red"></div>
-        <h3>UI/UX Design Projects</h3>
-        <p class="muted">
-          A collection of mini projects from my recent UI/UX course —  
-          exploring color systems, layouts, and user flow through prototypes.
-        </p>
-        <ul class="tags">
-          <li class="tag">Figma</li>
-          <li class="tag">UI/UX</li>
-        </ul>
-      </article>
-    </div>
-  </div>
+          <article class="card project">
+            <h3>My Portfolio Website</h3>
+            <p class="muted">
+              Designed and developed entirely from scratch using HTML, CSS, and JavaScript.  
+              Focused on simplicity, storytelling, and a clean 4-color visual theme.
+            </p>
+            <ul class="tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">UI/UX</li>
+            </ul>
+          </article>
+        </div>
 
+        <!-- 4) WHAT I’M WORKING ON -->
+        <h2>🚀 What I’m Working On</h2>
+        <div class="grid-2">
+          <article class="card project">
+            <h3>Recovery Companion</h3>
+            <p class="muted">
+              My first original Flutter app — focused on recovery, journaling, and emotional support.  
+              Designed to blend mental health awareness with supportive daily habits.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">Mental Health</li>
+            </ul>
+          </article>
 
-</section>
+          <article class="card project">
+            <h3>F1 Pulse</h3>
+            <p class="muted">
+              A Flutter app for Formula 1 fans — showing live race info, driver stats, and news updates.  
+              Built to enhance accessibility and engagement for regional audiences.
+            </p>
+            <ul class="tags">
+              <li class="tag tag--blue">Flutter</li>
+              <li class="tag">API Integration</li>
+            </ul>
+          </article>
 
+          <article class="card project">
+            <h3>Discovering Amman</h3>
+            <p class="muted">
+              A website idea to showcase Jordan’s hidden gems, culture, and local experiences.  
+              A creative concept focused on user-centered navigation and storytelling.
+            </p>
+            <ul class="tags">
+              <li class="tag">UI/UX</li>
+              <li class="tag">Web Design</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

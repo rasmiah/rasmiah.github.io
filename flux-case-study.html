@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" data-page="case-study">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flux — NFT Landing Page | Case Study</title>
+  <meta name="description" content="UI/UX case study for Flux, a single-page NFT landing website designed by Rasmiah Shadfan." />
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand__logo"></span>
+        <span class="brand__name">Rasmiah Shadfan</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+        <ul id="navLinks" class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About Me</a></li>
+          <li><a class="nav__link active" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="case-study">
+    <section class="section section--furni">
+      <div class="container">
+
+        <!-- Back link -->
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+
+        <!-- HERO: Title + summary + meta + SLIDER (side by side) -->
+        <header class="case-hero case-hero--flux">
+          <div class="case-hero__text">
+            <h1 class="title">Flux — NFT Landing Page</h1>
+            <p class="case-tagline">
+              A one-page NFT website for discovering, buying, and tracking collections with bold visuals
+              and clear calls to action.
+            </p>
+
+            <div class="case-meta">
+              <p><strong>Role:</strong> UI/UX Designer</p>
+              <p><strong>Tools:</strong> Figma</p>
+              <p><strong>Platform:</strong> Web (Desktop)</p>
+            </div>
+            <div class="case-hero__figma">
+              <h3 class="case-hero__figma-title">Explore in Figma</h3>
+              <ul class="case-links case-links--hero">
+                <li>
+                  <strong>Design file:</strong>
+                  <a href="https://www.figma.com/design/Lhdl6GD7c2POlTGS7EyEgj/Flux---Figma-Build-Tutorial--Starter---Community-?node-id=203-2&t=1tZ2jdBIswK42fBJ-1"
+                    target="_blank" rel="noopener">
+                    View Figma design file
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SLIDER with all *Main images, now inside hero -->
+          <div class="slider">
+            <div class="slider-track">
+              <figure class="slide">
+                <img src="assets/images/HeroMain.png"
+                     alt="Flux hero section main mockup"
+                     class="case-image">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/analyticsMain.png"
+                     alt="Flux analytics section main mockup"
+                     class="case-image">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/GetOurAppMain.png"
+                     alt="Flux get our app section main mockup"
+                     class="case-image">
+              </figure>
+              <figure class="slide">
+                <img src="assets/images/AreYouReadyMain.png"
+                     alt="Flux final call to action main mockup"
+                     class="case-image">
+              </figure>
+            </div>
+            <div class="slider-dots"></div>
+          </div>
+        </header>
+
+        <!-- Overview: Problem / Goal / Concept -->
+        <section class="case-section case-section--cards">
+          <div class="case-card-block">
+            <h2>Problem</h2>
+            <p>
+              Many NFT sites feel noisy and overloaded, making it hard for users to understand the
+              value of the platform quickly.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h2>Goal</h2>
+            <p>
+              Create a single landing page that clearly explains what Flux does, shows trust and
+              analytics, and ends with a strong call to action.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h2>Concept</h2>
+            <p>
+              Flux brings everything into one scroll: hero, “Featured on”, analytics, app promotion,
+              testimonials, and a final “Are you ready?” section.
+            </p>
+          </div>
+        </section>
+
+        <!-- Hero structure section (uses HeroFrame) -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Hero & Navigation</h2>
+            <p>
+              The hero pairs “Discover and collect NFTs” with two CTAs:
+              <strong>Buy NFTs</strong> (primary) and <strong>Sell NFTs</strong> (secondary).
+              A simple nav (Crypto, About, Pricing, Contact, Buy NFTs) hints at the content below.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/HeroFrame.png"
+                 alt="Flux hero section layout with navigation and primary CTAs"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Analytics + “Featured on” (uses analyticsFrame) -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Featured & Analytics</h2>
+            <p>
+              A “Featured on” strip adds credibility, followed by an analytics block with
+              “Built-in analytics to track your NFTs” and a <strong>View our pricing</strong> button
+              to connect insight with action.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/analyticsFrame.png"
+                 alt="Analytics and featured-on section for Flux landing page"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Get our app (uses GetOurAppFrame) -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Get Our App</h2>
+            <p>
+              The “Get our app” section invites users to browse NFTs from their phone, with a clear
+              headline, app mockup, and one primary CTA: <strong>Download our app</strong>.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/GetOurAppFrame.png"
+                 alt="Get our app section for Flux NFT website"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Testimonials (uses testimonialsFrame) -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Testimonials</h2>
+            <p>
+              Three short testimonial cards add social proof and break up the layout before the
+              final decision section.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/testimonialsFrame.png"
+                 alt="Testimonials section cards for Flux"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Final CTA (uses AreYouReadyFrame) -->
+        <section class="case-section case-section--split">
+          <div class="case-section__text">
+            <h2>Final Call to Action</h2>
+            <p>
+              The last card asks “Are you ready?” with a single primary button,
+              <strong>Get Started</strong>, giving the page a clear end point.
+            </p>
+          </div>
+          <div class="case-section__media">
+            <img src="assets/images/AreYouReadyFrame.png"
+                 alt="Final Are You Ready card with Get Started button"
+                 class="case-image">
+          </div>
+        </section>
+
+        <!-- Design decisions -->
+         <h2 class="case-section__title">Design Decisions</h2>
+
+        <section class="case-section case-section--cards case-section--design">
+          <div class="case-card-block">
+            <h3>Visual Style</h3>
+            <p>
+              I used a deep indigo base
+              <span class="color-pill" style="background:#171E63;"></span>
+              with bright accents
+              <span class="color-pill" style="background:#8D8DDA;"></span>
+              <span class="color-pill" style="background:#9AD6D7;"></span>
+              and dark blue
+              <span class="color-pill" style="background:#040F4D;"></span>.
+              White
+              <span class="color-pill" style="background:#FFFFFF;"></span>
+              and black
+              <span class="color-pill" style="background:#000000;"></span>
+              keep text sharp against the background.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h3>Layout & Sections</h3>
+            <p>
+              The page follows a clear story: hero, trust, analytics, app, testimonials, then
+              one final CTA. Each block keeps the same spacing, card radius, and button style.
+            </p>
+          </div>
+
+          <div class="case-card-block">
+            <h3>Buttons & Hierarchy</h3>
+            <p>
+              All main actions are primary buttons: Buy NFTs, View our pricing, Download our app,
+              and Get Started. This makes the next step obvious at every section.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as other pages) -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Rasmiah Shadfan</p>
+      <ul class="social">
+        <li><a href="mailto:rasmiah@example.com">Email</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
